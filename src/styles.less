@@ -7,6 +7,8 @@
 
 @almost-black: #2D2B33;// github.com/PatoFlamejanteTV
 
+// @BG_CHECKER-SIZE: 40px; // not used
+
 titlebox {
 
     //.main{ // uhh idk why it stays here
@@ -17,15 +19,53 @@ titlebox {
         width: 50%;
         border: 2px solid @almost-black;
         padding: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     //}
 }
 
-.noto-emoji {
+subtitlebox {
+
+    //.main{ // uhh idk why it stays here
+        color: @bg-green;
+        background-color: @shadow-green;
+
+        margin: auto;
+        width: 50%;
+        border: 2px solid @almost-black;
+        padding: 10px;
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    //}
+}
+
+emoji { // emoji emoji emoji 
     
     // https://fonts.google.com/noto/specimen/Noto+Color+Emoji
 
     font-family: "Noto Color Emoji", sans-serif;
     font-weight: 400;
     font-style: normal;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   
+body {
+
+    background-image: /* tint image */
+                      linear-gradient(to right, rgba(192, 192, 192, 0.75), rgba(192, 192, 192, 0.75)),
+                      /* checkered effect */
+                      linear-gradient(to right, black 50%, white 50%),
+                      linear-gradient(to bottom, black 50%, white 50%);
+    background-blend-mode: normal, difference, normal;
+    background-size: 2em 2em;
+
+}
+
+pre {
+    background-color: aliceblue;
+}
+
+img, coolshadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
