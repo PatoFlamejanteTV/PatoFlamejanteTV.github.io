@@ -1,0 +1,2 @@
+*.css
+# yeah css is not used here, its only generated when converting SCSS -> CSS
